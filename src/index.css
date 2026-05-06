@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-primary: #000000;
+  --color-accent: #00C853;
+  --color-accent-hover: #00E676;
+}
+
+/* Override green utilities if needed, or just use accent */
+.bg-accent { background-color: var(--color-accent); }
+.text-accent { color: var(--color-accent); }
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background-color: #00C853;
+  color: white;
+}
